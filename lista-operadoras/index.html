@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Exercício</title>
+
+    <!-- Link CSS BS - NÃO APAGAR -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container my-5">
+        <h4 class="text-center bg-primary m-0 text-light py-4">
+            Lista de Operadoras - São Paulo / Rio de Janeiro
+        </h4>
+
+        <div id="convenios" class="row my-2"></div>
+
+        <div class="row my-5 border rounded">
+
+            <div class="col-md-4 text-center my-3 rounded p-2">
+                <h5>Total de Operadoras - SP</h5>
+                <h4 id="totalSP"></h4>
+            </div>
+            <div class="col-md-4 text-center my-3 rounded p-2">
+                <h5>Total de Operadoras - RJ</h5>
+                <h4 id="totalRJ"></h4>
+            </div>
+            <div class="col-md-4 text-center my-3 rounded p-2">
+                <h5>Total de Operadoras - Outros Estados</h5>
+                <h4 id="totalOutrosEstados"></h4>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="./js/montarScript.js"></script>
+</body>
+
+</html>

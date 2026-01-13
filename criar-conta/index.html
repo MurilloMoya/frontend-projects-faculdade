@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyApp</title>
+    <!-- link para o BootStrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+    <section class="container my-5">
+        <div class="bg-primary p-4 mt-3 rounded">
+            <h1 class="display-5 text-light">Criar Conta</h1>
+        </div>
+
+        <form id="criarConta" name="criarConta" method="get" action="">
+
+            <!-- usar o grid do Bootstrap -->
+             <div class="row my-3">
+
+                <div class="my-3 col-md-6">
+                    <label for="usuario" class="form-label">Usuário</label>
+                    <input type="text" id="usuario" name="usuario" class="form-control"
+                    placeholder="ex: user1234" minlength="10" maxlength="20" required>
+                </div>
+
+                <div class="my-3 col-md-6">
+                    <label for="senha" class="form-label">Senha</label>
+                    <input type="password" id="senha" name="senha" class="form-control"
+                    placeholder="ex: !@#$abcd" minlength="8" maxlength="20" required>
+                </div>
+
+                <div class="my-3 col-md-4">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" id="email" name="email" class="form-control"
+                    placeholder="ex: seuemail@email.com" maxlength="40" required>
+                </div>
+
+                <div class="my-3 col-md-4">
+                    <label for="dataCadastro" class="form-label">Data do Cadastro</label>
+                    <input type="date" id="dataCadastro" name="dataCadastro" class="form-control"
+                    required>
+                </div>
+
+                <div class="my-3 col-md-4">
+                    <label for="tipoConta" class="form-label">Tipo da conta</label>
+                    <select name="tipoConta" id="tipoConta" required class="form-select">
+                        <option value="0" disabled selected>Selecione sua conta</option>
+                        <option value="Free">Free</option>
+                        <option value="Vip">Vip</option>
+                        <option value="Premium">Premium</option>
+                    </select>
+                </div>
+
+                <div class="my-4 d-flex justify-content-end">
+                    <button type="submit" class="btn btn-primary btn-lg">Criar Conta</button>
+                </div>
+             </div>
+        </form>
+
+        <h4>Contas Cadastradas</h4>
+        <!-- tabela com os dados do form -->
+         <div class="my-4">
+            <table class="table table-striped table-hover text-center">
+                <thead class="table-primary">
+                    <tr>
+                        <th>Usuário</th>
+                        <th>Senha</th>
+                        <th>email</th>
+                        <th>Data Cadastro</th>
+                        <th>Tipo de Conta</th>
+                    </tr>
+                </thead>
+                <tbody id="dadosConta"></tbody>
+                <tfoot class="table-dark">
+                    <tr>
+                        <td colspan="5" id="dataAtualizacao"></td>
+                    </tr>
+                </tfoot>
+            </table>
+         </div>
+    </section>
+
+    <script src="./js/criarConta.js"></script>
+</body>
+
+</html>

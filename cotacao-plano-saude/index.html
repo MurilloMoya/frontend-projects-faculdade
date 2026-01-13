@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Exercício</title>
+
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container my-5">
+        <h4 class="display-5 p-4 bg-danger text-light">
+            Cotação Plano de Saúde
+        </h4>
+
+        <h2 class="mt-4">Dados do usuário</h2>
+        <form class="dados" id="dados" method="get" action="">
+            <div class="row mb-3">
+
+                <div class="col-md-12 my-3">
+                    <label for="usuario" class="form-label">Nome</label>
+                    <input type="text" class="form-control" id="nome" name="nome" placeholder="ex: Fulano de Tal"
+                        required>
+                </div>
+
+                <div class="col-md-6  my-3">
+                    <label for="tipoPlano" class="form-label">Tipo de Plano</label>
+                    <select id="tipoPlano" name="tipoPlano" class="form-select" required>
+                        <option value="245.92">GNDI Smart 400</option>
+                        <option value="379.31">GNDI Advance 700</option>
+                        <option value="524.33">GNDI Premium 900</option>
+                        <option value="728.12">GNDI Infinity 1000</option>
+                    </select>
+                </div>
+
+                <div class="col-md-6  my-3">
+                    <label for="dependentes" class="form-label">Número Dependentes</label>
+                    <input type="text" class="form-control" id="dependentes" name="dependentes" placeholder="ex: 3"
+                        required>
+                </div>
+            </div>
+            <div class="d-flex justify-content-end mt-3">
+                <button type="submit" class="btn btn-danger">Realizar Cotação  </button>
+            </div>
+        </form>
+
+        <div class="my-4">
+            <h2>Cotações realizadas</h2>
+            <table id="resumo" class="table table-hover text-center">
+                <thead class="table-dark">
+                    <tr id="cabecalho">
+                        <th class="nome">Nome</th>
+                        <th class="tipo-Plano">Plano Selecionado</th>
+                        <th class="valor-Plano">Valor Plano</th>
+                        <th class="dependentes">Num Dependentes</th>
+                        <th class="totalMensal">Valor Mensal</th>
+                    </tr>
+                </thead>
+                <tbody id="cotacoes">
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script type="module" src="./js/montarFront.js"></script>
+
+</body>
+
+</html>
