@@ -1,6 +1,5 @@
 # frontend-projects-faculdade
 
-# Projetos da Faculdade – JavaScript
 
 Este repositório reúne projetos e exercícios desenvolvidos durante o curso de  
 **Sistemas de Informação**, com foco em **lógica de programação**, **JavaScript**  
