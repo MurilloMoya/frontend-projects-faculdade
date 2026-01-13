@@ -64,6 +64,6 @@ e manipulação do DOM foram implementados pelo aluno.
 
 ## 📚 Tecnologias Utilizadas
 - HTML5  
-- CSS3 *(base fornecida pelo professor)*  
+- CSS *(base fornecida pelo professor)*  
 - JavaScript
 - Bootstrap  
